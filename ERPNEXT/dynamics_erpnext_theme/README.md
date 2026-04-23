@@ -1,27 +1,37 @@
-# Dynamics ERPNext Theme v3
+# Dynamics ERPNext Theme (v3)
 
-This app gives ERPNext/Frappe a Microsoft Dynamics inspired UI with:
-- full blue sidebar styling
-- refined buttons, forms, tables, and cards
-- enhanced login page styling
-- CEO dashboard quick actions and card treatment
-- bundled **CEO Dashboard** workspace fixture
+A custom ERPNext/Frappe app that transforms the user interface to resemble **Microsoft Dynamics 365**, including:
 
-## Install
+* Full blue Dynamics-style sidebar
+* Clean modern UI (cards, forms, tables)
+* Custom login page styling
+* CEO dashboard workspace
+* Improved buttons, typography, and layout
+
+---
+
+## 🚀 Installation (via GitHub)
+
+### Step 1: Get the App
+
+Navigate to your bench directory and pull the app:
 
 ```bash
-cd ~/frappe-bench/apps
-unzip dynamics_erpnext_theme_v3.zip
 cd ~/frappe-bench
-bench --site yoursite install-app dynamics_erpnext_theme
-bench build
-bench --site yoursite migrate
-bench --site yoursite clear-cache
-bench restart
+bench get-app https://github.com/YOUR_USERNAME/dynamics_erpnext_theme.git
 ```
 
-## If v2 is already installed
-Replace the app folder with this version, then run:
+---
+
+### Step 2: Install on Your Site
+
+```bash
+bench --site yoursite install-app dynamics_erpnext_theme
+```
+
+---
+
+### Step 3: Build & Apply Changes
 
 ```bash
 bench build
@@ -30,13 +40,132 @@ bench --site yoursite clear-cache
 bench restart
 ```
 
-## CEO Dashboard included
-This version adds a **CEO Dashboard** workspace with:
-- executive shortcuts for Accounting, Selling, Stock, and Projects
-- executive cards for Operations, Finance, and People & Projects
-- quick monitoring links for Projects, Sales Invoices, Purchase Orders, and Payroll Entries
+---
 
-## Notes
-- The workspace is provided as a fixture and imports during `bench migrate`.
-- Some linked pages depend on the corresponding ERPNext modules being installed and enabled.
-- You can further tailor the workspace by editing `dynamics_erpnext_theme/dynamics_erpnext_theme/fixtures/workspace.json`.
+## 🔄 Updating the App
+
+To pull the latest updates from GitHub:
+
+```bash
+cd ~/frappe-bench/apps/dynamics_erpnext_theme
+git pull
+cd ~/frappe-bench
+bench build
+bench --site yoursite migrate
+bench restart
+```
+
+---
+
+## 🧠 Features Included
+
+### 🎨 UI Theme
+
+* Microsoft Dynamics-inspired color scheme
+* Blue sidebar with active highlights
+* Modern card layout with shadows and spacing
+* Segoe UI-style typography
+
+### 🔐 Login Page
+
+* Styled login screen matching Dynamics look
+* Clean and professional layout
+
+### 📊 CEO Dashboard Workspace
+
+* Executive-level overview workspace
+* Quick links to:
+
+  * Projects
+  * Sales / Invoices
+  * Stock / Warehouse
+  * HR & Payroll
+* Designed for top-level monitoring
+
+---
+
+## ⚙️ Requirements
+
+* ERPNext v15+
+* Frappe Framework v15+
+* Bench environment
+
+---
+
+## 📁 App Structure
+
+```
+dynamics_erpnext_theme/
+├── dynamics_erpnext_theme/
+│   ├── public/
+│   │   ├── css/
+│   │   ├── js/
+│   │   └── workspace/
+│   ├── hooks.py
+│   └── config/
+├── README.md
+```
+
+---
+
+## ⚠️ Notes
+
+* This is a **UI/UX theme app only** — it does not modify core ERP logic.
+* Safe to use alongside:
+
+  * custom workflows
+  * payroll customizations
+  * SBC project setups
+* Always run `bench build` after updates.
+
+---
+
+## 🛠 Troubleshooting
+
+### App not showing correctly
+
+```bash
+bench build
+bench --site yoursite clear-cache
+bench restart
+```
+
+---
+
+### CEO Dashboard not visible
+
+```bash
+bench --site yoursite migrate
+```
+
+---
+
+### CSS not applied
+
+Hard refresh browser:
+
+```
+Ctrl + Shift + R
+```
+
+---
+
+## 🔮 Roadmap (Optional Enhancements)
+
+* Role-based dashboards (CEO / Projects / Accounts)
+* Dark mode toggle
+* Mobile UX improvements
+* KPI widgets (Revenue, Projects, Stock)
+* Power BI–style analytics cards
+
+---
+
+## 👨‍💻 Author
+
+Developed for ERPNext customization and enterprise UI enhancement.
+
+---
+
+## 📜 License
+
+MIT License
