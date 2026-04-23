@@ -18,7 +18,7 @@ Navigate to your bench directory and pull the app:
 
 ```bash
 cd ~/frappe-bench
-bench get-app https://github.com/YOUR_USERNAME/dynamics_erpnext_theme.git
+bench get-app https://github.com/ERPNEXT/dynamics_erpnext_theme.git
 ```
 
 ---
