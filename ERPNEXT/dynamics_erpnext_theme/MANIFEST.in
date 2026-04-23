@@ -1,0 +1,3 @@
+recursive-include dynamics_erpnext_theme/public *
+recursive-include dynamics_erpnext_theme/templates *
+recursive-include dynamics_erpnext_theme/www *

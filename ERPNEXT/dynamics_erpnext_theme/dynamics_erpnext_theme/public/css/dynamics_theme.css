@@ -1,0 +1,295 @@
+:root {
+    --dyn-primary: #0f6cbd;
+    --dyn-primary-2: #115ea3;
+    --dyn-primary-3: #0b4f8a;
+    --dyn-sidebar: #0b3b68;
+    --dyn-sidebar-accent: #1f7bd6;
+    --dyn-sidebar-hover: rgba(255,255,255,0.12);
+    --dyn-sidebar-active: linear-gradient(90deg, #2d8cff 0%, #1f7bd6 100%);
+    --dyn-bg: #f4f7fb;
+    --dyn-bg-2: #eef3f9;
+    --dyn-card: #ffffff;
+    --dyn-border: #d7e3f2;
+    --dyn-text: #1b1f23;
+    --dyn-muted: #5b6b7b;
+    --dyn-shadow: 0 6px 18px rgba(15, 108, 189, 0.08);
+    --dyn-radius: 14px;
+    --dyn-font: "Segoe UI", "Inter", Arial, sans-serif;
+}
+
+html, body {
+    background: var(--dyn-bg) !important;
+    font-family: var(--dyn-font) !important;
+    color: var(--dyn-text) !important;
+}
+
+body.dynamics-theme .navbar {
+    background: #ffffff !important;
+    border-bottom: 1px solid var(--dyn-border) !important;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04) !important;
+    min-height: 58px;
+}
+
+body.dynamics-theme .navbar .navbar-brand,
+body.dynamics-theme .navbar .nav-link,
+body.dynamics-theme .navbar .dropdown-toggle,
+body.dynamics-theme .navbar .search-bar {
+    color: var(--dyn-text) !important;
+}
+
+body.dynamics-theme .layout-main-section-wrapper,
+body.dynamics-theme .layout-main,
+body.dynamics-theme .desk-page,
+body.dynamics-theme .page-body {
+    background: var(--dyn-bg) !important;
+}
+
+body.dynamics-theme .layout-side-section,
+body.dynamics-theme .desk-sidebar,
+body.dynamics-theme .standard-sidebar {
+    background: linear-gradient(180deg, #0b3b68 0%, #0e4b83 100%) !important;
+    color: #fff !important;
+    border-right: none !important;
+    box-shadow: inset -1px 0 0 rgba(255,255,255,0.06);
+}
+
+body.dynamics-theme .standard-sidebar .standard-sidebar-item,
+body.dynamics-theme .desk-sidebar .sidebar-item,
+body.dynamics-theme .layout-side-section .sidebar-item {
+    color: rgba(255,255,255,0.9) !important;
+    border-radius: 10px !important;
+    margin: 2px 8px !important;
+    padding: 10px 12px !important;
+}
+
+body.dynamics-theme .standard-sidebar .standard-sidebar-item:hover,
+body.dynamics-theme .desk-sidebar .sidebar-item:hover,
+body.dynamics-theme .layout-side-section .sidebar-item:hover {
+    background: var(--dyn-sidebar-hover) !important;
+    color: #fff !important;
+}
+
+body.dynamics-theme .selected-sidebar-item,
+body.dynamics-theme .standard-sidebar-item.selected,
+body.dynamics-theme .sidebar-item.selected {
+    background: var(--dyn-sidebar-active) !important;
+    color: #fff !important;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    font-weight: 600 !important;
+}
+
+body.dynamics-theme .layout-side-section .h6,
+body.dynamics-theme .layout-side-section .sidebar-label,
+body.dynamics-theme .standard-sidebar-label {
+    color: rgba(255,255,255,0.72) !important;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    font-size: 11px !important;
+}
+
+body.dynamics-theme .form-section,
+body.dynamics-theme .section-body,
+body.dynamics-theme .frappe-card,
+body.dynamics-theme .widget,
+body.dynamics-theme .number-card,
+body.dynamics-theme .dashboard-graph,
+body.dynamics-theme .chart-wrapper,
+body.dynamics-theme .report-wrapper,
+body.dynamics-theme .list-row-container,
+body.dynamics-theme .dt-scrollable,
+body.dynamics-theme .form-dashboard-section,
+body.dynamics-theme .page-form,
+body.dynamics-theme .form-grid,
+body.dynamics-theme .workspace-card,
+body.dynamics-theme .shortcut-widget-box {
+    background: var(--dyn-card) !important;
+    border: 1px solid var(--dyn-border) !important;
+    border-radius: var(--dyn-radius) !important;
+    box-shadow: var(--dyn-shadow) !important;
+}
+
+body.dynamics-theme .page-head {
+    background: transparent !important;
+}
+
+body.dynamics-theme .page-title .title-text,
+body.dynamics-theme .page-title,
+body.dynamics-theme .form-section .section-head,
+body.dynamics-theme .widget-head .widget-title {
+    color: var(--dyn-text) !important;
+    font-weight: 600 !important;
+}
+
+body.dynamics-theme .btn {
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    box-shadow: none !important;
+}
+
+body.dynamics-theme .btn-primary {
+    background: linear-gradient(180deg, var(--dyn-primary) 0%, var(--dyn-primary-2) 100%) !important;
+    border-color: var(--dyn-primary-2) !important;
+    color: #fff !important;
+}
+
+body.dynamics-theme .btn-primary:hover {
+    background: linear-gradient(180deg, var(--dyn-primary-2) 0%, var(--dyn-primary-3) 100%) !important;
+}
+
+body.dynamics-theme .btn-default,
+body.dynamics-theme .btn-secondary {
+    background: #fff !important;
+    border: 1px solid var(--dyn-border) !important;
+    color: var(--dyn-text) !important;
+}
+
+body.dynamics-theme .form-control,
+body.dynamics-theme input,
+body.dynamics-theme textarea,
+body.dynamics-theme select,
+body.dynamics-theme .awesomplete input {
+    background: #fff !important;
+    border: 1px solid #bfd2e7 !important;
+    border-radius: 10px !important;
+    min-height: 40px;
+    box-shadow: none !important;
+}
+
+body.dynamics-theme .form-control:focus,
+body.dynamics-theme input:focus,
+body.dynamics-theme textarea:focus,
+body.dynamics-theme select:focus,
+body.dynamics-theme .awesomplete input:focus {
+    border-color: var(--dyn-primary) !important;
+    box-shadow: 0 0 0 3px rgba(15,108,189,0.14) !important;
+}
+
+body.dynamics-theme .nav-tabs .nav-link,
+body.dynamics-theme .form-tabs-list .nav-link {
+    border: none !important;
+    border-bottom: 3px solid transparent !important;
+    color: var(--dyn-muted) !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+}
+
+body.dynamics-theme .nav-tabs .nav-link.active,
+body.dynamics-theme .form-tabs-list .nav-link.active {
+    color: var(--dyn-primary) !important;
+    border-bottom-color: var(--dyn-primary) !important;
+    font-weight: 600;
+}
+
+body.dynamics-theme .grid-heading-row,
+body.dynamics-theme .dt-header,
+body.dynamics-theme .list-row-head {
+    background: #f8fbff !important;
+    border-bottom: 1px solid var(--dyn-border) !important;
+}
+
+body.dynamics-theme .grid-row:hover,
+body.dynamics-theme .dt-row:hover,
+body.dynamics-theme .list-row:hover {
+    background: #f7fbff !important;
+}
+
+body.dynamics-theme .indicator-pill,
+body.dynamics-theme .badge,
+body.dynamics-theme .indicator {
+    border-radius: 999px !important;
+    font-weight: 600 !important;
+}
+
+body.dynamics-theme .number-card .number,
+body.dynamics-theme .number-card .value {
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    color: var(--dyn-primary-2) !important;
+}
+
+body.dynamics-theme .modal-content,
+body.dynamics-theme .dropdown-menu {
+    border: 1px solid var(--dyn-border) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 18px 40px rgba(11,59,104,0.16) !important;
+}
+
+body.dynamics-theme .search-bar,
+body.dynamics-theme .navbar .search-input {
+    border-radius: 999px !important;
+    background: #f5f9ff !important;
+}
+
+body.dynamics-theme .workspace-widget {
+    min-height: 140px;
+}
+
+body.dynamics-workspace .page-head .page-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.dyn-ceo-actions {
+    display: inline-flex;
+    gap: 8px;
+    margin-left: 16px;
+    flex-wrap: wrap;
+}
+
+.dyn-ceo-actions .btn {
+    padding: 7px 12px !important;
+}
+
+body.dynamics-theme .widget.quick-list-widget-box .widget-body,
+body.dynamics-theme .widget.links-widget-box .widget-body {
+    padding-top: 10px;
+}
+
+body.dynamics-theme .widget-control {
+    border-radius: 10px !important;
+}
+
+body.dynamics-theme .ellipsis, 
+body.dynamics-theme .text-muted {
+    color: var(--dyn-muted) !important;
+}
+
+/* CEO dashboard widget styling */
+body.dynamics-theme .dashboard .chart-wrapper,
+body.dynamics-theme .dashboard .widget,
+body.dynamics-theme .dashboard .number-card,
+body.dynamics-theme .workspace .widget,
+body.dynamics-theme .workspace .number-card {
+    position: relative;
+    overflow: hidden;
+}
+
+body.dynamics-theme .dashboard .number-card::before,
+body.dynamics-theme .workspace .number-card::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--dyn-primary) 0%, #5aa7ff 100%);
+}
+
+body.dynamics-theme .dashboard .number-card,
+body.dynamics-theme .workspace .number-card {
+    padding: 18px !important;
+}
+
+body.dynamics-theme .dashboard .widget-head,
+body.dynamics-theme .workspace .widget-head {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eef4fb;
+}
+
+body.dynamics-theme .chart-wrapper canvas {
+    border-radius: 12px;
+}
+
+/* login link style if any web pages share assets */
+.page-card-head img {
+    max-height: 44px;
+}

@@ -1,0 +1,80 @@
+body[data-path="login"], body.page-login, body.for-login {
+    background:
+        radial-gradient(circle at top left, rgba(45,140,255,0.28), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(17,94,163,0.22), transparent 28%),
+        linear-gradient(135deg, #0b3b68 0%, #115ea3 50%, #2d8cff 100%) !important;
+    min-height: 100vh;
+    font-family: "Segoe UI", "Inter", Arial, sans-serif !important;
+}
+
+body[data-path="login"] .page-card,
+body.page-login .page-card,
+body.for-login .page-card {
+    border-radius: 22px !important;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.22) !important;
+    border: 1px solid rgba(255,255,255,0.24) !important;
+    background: rgba(255,255,255,0.96) !important;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+body[data-path="login"] .page-card::before,
+body.page-login .page-card::before,
+body.for-login .page-card::before {
+    content: "Microsoft Dynamics Style ERP";
+    display: block;
+    padding: 22px 24px 8px;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #0b3b68;
+    font-weight: 700;
+}
+
+body[data-path="login"] .page-card::after,
+body.page-login .page-card::after,
+body.for-login .page-card::after {
+    content: "Sign in to continue to your business workspace";
+    display: block;
+    padding: 0 24px 18px;
+    color: #4c5f75;
+    font-size: 14px;
+}
+
+body[data-path="login"] .page-card-head,
+body.page-login .page-card-head,
+body.for-login .page-card-head {
+    padding-top: 0 !important;
+}
+
+body[data-path="login"] .page-card-body,
+body.page-login .page-card-body,
+body.for-login .page-card-body {
+    padding: 0 24px 24px !important;
+}
+
+body[data-path="login"] .form-control,
+body.page-login .form-control,
+body.for-login .form-control {
+    min-height: 46px;
+    border-radius: 12px !important;
+    border: 1px solid #b9d1ea !important;
+    background: #ffffff !important;
+}
+
+body[data-path="login"] .btn-primary,
+body.page-login .btn-primary,
+body.for-login .btn-primary {
+    width: 100%;
+    min-height: 46px;
+    border-radius: 12px !important;
+    font-weight: 700;
+    background: linear-gradient(180deg, #0f6cbd 0%, #115ea3 100%) !important;
+    border-color: #115ea3 !important;
+}
+
+body[data-path="login"] .app-logo,
+body.page-login .app-logo,
+body.for-login .app-logo {
+    max-height: 56px !important;
+    margin-bottom: 12px;
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "doctype": "Workspace",
+    "name": "CEO Dashboard",
+    "label": "CEO Dashboard",
+    "title": "CEO Dashboard",
+    "module": "Dynamics Erpnext Theme",
+    "public": 1,
+    "is_hidden": 0,
+    "icon": "chart",
+    "indicator_color": "blue",
+    "sequence_id": 1.0,
+    "for_user": "",
+    "parent_page": "",
+    "content": "[{\"id\": \"head_1\", \"type\": \"header\", \"data\": {\"text\": \"<span class='h4'><b>CEO Command Center</b></span>\", \"col\": 12}}, {\"id\": \"para_1\", \"type\": \"paragraph\", \"data\": {\"text\": \"Monitor Finance, Sales, Buying, Stock, Projects, HR, and system-wide operations from one workspace.\", \"col\": 12}}, {\"id\": \"shortcut_1\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Accounting Dashboard\", \"col\": 3}}, {\"id\": \"shortcut_2\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Selling\", \"col\": 3}}, {\"id\": \"shortcut_3\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Stock\", \"col\": 3}}, {\"id\": \"shortcut_4\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Projects\", \"col\": 3}}, {\"id\": \"spacer_1\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"card_1\", \"type\": \"card\", \"data\": {\"card_name\": \"Executive Operations\", \"col\": 4}}, {\"id\": \"card_2\", \"type\": \"card\", \"data\": {\"card_name\": \"Executive Finance\", \"col\": 4}}, {\"id\": \"card_3\", \"type\": \"card\", \"data\": {\"card_name\": \"Executive People & Projects\", \"col\": 4}}, {\"id\": \"head_2\", \"type\": \"header\", \"data\": {\"text\": \"<span class='h5'><b>Quick Monitoring Links</b></span>\", \"col\": 12}}, {\"id\": \"link_1\", \"type\": \"link\", \"data\": {\"link_to\": \"List/Project/List\", \"label\": \"All Projects\", \"col\": 3}}, {\"id\": \"link_2\", \"type\": \"link\", \"data\": {\"link_to\": \"List/Sales Invoice/List\", \"label\": \"Sales Invoices\", \"col\": 3}}, {\"id\": \"link_3\", \"type\": \"link\", \"data\": {\"link_to\": \"List/Purchase Order/List\", \"label\": \"Purchase Orders\", \"col\": 3}}, {\"id\": \"link_4\", \"type\": \"link\", \"data\": {\"link_to\": \"List/Payroll Entry/List\", \"label\": \"Payroll Entries\", \"col\": 3}}]",
+    "roles": [
+      {
+        "role": "System Manager"
+      },
+      {
+        "role": "Accounts Manager"
+      },
+      {
+        "role": "Purchase Manager"
+      },
+      {
+        "role": "Sales Manager"
+      },
+      {
+        "role": "HR Manager"
+      }
+    ],
+    "charts": [],
+    "shortcuts": [
+      {
+        "label": "Accounting Dashboard",
+        "link_to": "accounting-dashboard",
+        "type": "Dashboard"
+      },
+      {
+        "label": "Selling",
+        "link_to": "selling",
+        "type": "Module"
+      },
+      {
+        "label": "Stock",
+        "link_to": "stock",
+        "type": "Module"
+      },
+      {
+        "label": "Projects",
+        "link_to": "projects",
+        "type": "Module"
+      }
+    ],
+    "cards": [
+      {
+        "label": "Executive Operations",
+        "links": [
+          {
+            "label": "Projects",
+            "link_to": "List/Project/List",
+            "type": "Link"
+          },
+          {
+            "label": "Tasks",
+            "link_to": "List/Task/List",
+            "type": "Link"
+          },
+          {
+            "label": "Material Requests",
+            "link_to": "List/Material Request/List",
+            "type": "Link"
+          },
+          {
+            "label": "Stock Entry",
+            "link_to": "List/Stock Entry/List",
+            "type": "Link"
+          }
+        ]
+      },
+      {
+        "label": "Executive Finance",
+        "links": [
+          {
+            "label": "Sales Invoice",
+            "link_to": "List/Sales Invoice/List",
+            "type": "Link"
+          },
+          {
+            "label": "Purchase Invoice",
+            "link_to": "List/Purchase Invoice/List",
+            "type": "Link"
+          },
+          {
+            "label": "Payment Entry",
+            "link_to": "List/Payment Entry/List",
+            "type": "Link"
+          },
+          {
+            "label": "General Ledger",
+            "link_to": "query-report/General Ledger",
+            "type": "Link"
+          }
+        ]
+      },
+      {
+        "label": "Executive People & Projects",
+        "links": [
+          {
+            "label": "Employees",
+            "link_to": "List/Employee/List",
+            "type": "Link"
+          },
+          {
+            "label": "Payroll Entry",
+            "link_to": "List/Payroll Entry/List",
+            "type": "Link"
+          },
+          {
+            "label": "Leave Application",
+            "link_to": "List/Leave Application/List",
+            "type": "Link"
+          },
+          {
+            "label": "Expense Claim",
+            "link_to": "List/Expense Claim/List",
+            "type": "Link"
+          }
+        ]
+      }
+    ]
+  }
+]
